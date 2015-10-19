@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - MOONP</title>
+	<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />	
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script 
+        type="text/javascript" 
+        src="assets/js/libs/jquery/jquery.js"></script> 
+		
+		
+ <script 
+        type="text/javascript" 
+        src="assets/js/libs/jquery/jquery-ui.min.js"></script>
+	
+<link rel="stylesheet" href="assets/css/language-selector8f35.html?v=3.0.2-a" type="text/css" media="all" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.aivahthemes.com\/lifecare\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='iva-bhrs-front-css'  href='assets/css/iva-bh-frontd7b7.css?ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='assets/css/settings1748.css?ver=5.0.5' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='iva-theme-style-css'  href='assets/css/style5b75.css?ver=3.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='iva-shortcodes-css'  href='assets/css/shortcodes68b3.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='iva-fontawesome-css'  href='assets/css/font-awesomed7b7.css?ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='iva-animate-css'  href='assets/css/animate68b3.css?ver=1' type='text/css' media='screen' />
+<link rel='stylesheet' id='iva-prettyPhoto-css'  href='assets/css/prettyPhoto68b3.css?ver=1' type='text/css' media='screen' />
+<link rel='stylesheet' id='iva-responsive-css'  href='assets/css/responsive68b3.css?ver=1' type='text/css' media='screen' />
+<link rel='stylesheet' id='datepicker-css'  href='assets/css/datepickerd7b7.css?ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='iva-style-css'  href='assets/css/blue68b3.css?ver=1' type='text/css' media='screen' />
+<link rel='stylesheet' id='clinichours_font-css'  href='http://fonts.googleapis.com/css?family=Patua+One&amp;ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='iva-owl-style-css'  href='assets/css/owl.carousel68b3.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='iva-owl-theme-css'  href='assets/css/owl.theme68b3.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='iva-css-flexslider-css'  href='assets/css/flexslider68b3.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-business-css'  href='assets/css/business-hours5152.css?ver=1.0' type='text/css' media='screen' />	
+	
+<!-- Google Fonts -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CLato:400,300,700%7CArchivo+Narrow:400,700%7C" rel="stylesheet" type="text/css" />
+
+<style type='text/css'>
+
+body { background-color:#f8f8f8; }
+body { font-size:13px;    }
+
+.pagemid {  }
+h1, h2, h3, h4, h5, h6 { font-family:Lato; }
+body { font-family:Open Sans; }
+.topbar { }
+.topbar { }
+.atp_sub_nav ul li  { }
+.atp_sub_nav ul li a,
+.topbar a { }
+
+.hover_type a  { }
+.hover_type a.hoverdetails:hover,.hover_type a.hovergallery:hover,.hover_type a.hoverimage:hover { }
+.woocommerce span.onsale, .woocommerce-page span.onsale { }
+
+.header, .header-style2, .header-style3, .header-style4{  }
+#subheader {  }
+h1#site-title a{  color:#8272b9;   font-weight:bold; }
+h2#site-description {  color:#515151;    }
+
+#sticky {  }
+#sticky {  }
+.iva_appt_section {  }
+
+.header-style2 .primarymenu,
+.header-style3 .primarymenu, 
+.header-style4 .primarymenu {  }
+
+.vertical_footerbar  { }
+.vertical_footerbar a { }
+.vertical_footerbar a:hover  { }
+.sidemenu .logo{ background-color:#fcfcfc; }
+.sidemenu {  }
+.sf-menu a {    font-style:normal; font-family:Archivo Narrow; }
+.sf-menu li:hover, 
+.sf-menu li.sfHover {  }
+
+.sf-menu .sfHover > a,
+.sf-menu a:focus, 
+.sf-menu a:hover, 
+.sf-menu a:active {
+	}
+
+.sf-menu ul {  }
+.sf-menu ul a {  }
+.sf-menu ul li a { #dddddd }
+.sf-menu li li:hover, 
+.sf-menu li li.sfHover, 
+.sf-menu li li a:focus, 
+.sf-menu li li a:hover, 
+.sf-menu li li a:active { }
+
+.sf-menu li.current-cat > a, 
+.sf-menu li.current_page_item > a, 
+.sf-menu li.current-menu-ancestor > a, 
+.sf-menu li.current-page-ancestor > a {  }
+
+h1 {     font-weight:300;} h2 {     font-weight:300; } h3 {      }h4 {      }h5 {     font-weight:bold; }h6 {     font-weight:bold; }
+
+h2.entry-title a {      }
+h2.entry-title a:hover {  }
+.widget-title {      }
+#footer .widget-title {     font-weight:bold; }
+
+a,.entry-title a {  }
+a:hover,.entry-title a:hover {  }
+
+#subheader a {  }
+#subheader a:hover {  }
+
+#footer {       }
+.copyright {       }
+
+#footer .widget-title {  }
+.breadcrumbs {  }
+#footer a {  }
+#footer a:hover { color:#ffffff; }
+
+.democlass { background-color: #e7e7e7; color: #ffffff; text-align: center; padding: 20px 0; margin-bottom: 0; }
+.democlass:hover { background-color: #f3f3f3; cursor: pointer;  }
+.section_row  .one_third { margin-bottom: 0 !important; }
+.section_row  .two_third { margin-bottom: 0 !important; }
+#atp_menu { text-transform: uppercase;}
+</style>
+	
+	
+	
+	
+        <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="assets/css/frontend.css">
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="assets/css/general.css">
+
+        <script 
+        type="text/javascript" 
+        src="assets/js/libs/jquery/jquery.qtip.min.js"></script>
+    <script 
+        type="text/javascript" 
+        src="assets/js/libs/bootstrap/bootstrap.min.js"></script> 
+    <script 
+        type="text/javascript" 
+        src="assets/js/libs/jquery/jquery.maskedinput-1.3.js"></script> 
+    <script 
+        type="text/javascript" 
+        src="assets/js/libs/date.js"></script>
+    <script 
+        type="text/javascript" 
+        src="assets/js/frontend_book.js"></script>
+
+	<script type="text/javascript">
+$(document).ready(function ($) { 
+		$('.iva-mobile-dropdown').click(function(){
+			if($('.iva-mobile-menu').css('height') == '100px') {
+				$('.iva-mobile-menu').animate({height:0}, '500');
+			}
+			else{
+				$('.iva-mobile-menu').show();
+				$('.iva-mobile-menu').animate({height:100}, '500');
+			}
+
+			return false;
+		});
+
+		mobilemenu();
+		$(window).resize(function () {
+			mobilemenu();
+		});
+	
+	/* ---------------Mobile menu---------------------- */
+	function mobilemenu(){
+
+		// show meun starting from iPad Portrait
+		if( window.innerWidth < 768 ){
+			$('.header #menuwrap').hide();
+		}else {
+			$('.header #menuwrap').show();
+			$('.iva-mobile-menu').hide();
+		}
+
+	}
+});
+
+	</script
+		
+        <link 
+        rel="icon" 
+        type="image/x-icon" 
+        href="assets/images/favicon.ico">
+    
+    <style>
+        #login-frame {
+            width: 630px;
+            margin: 150px auto 0 auto;
+            background: #FFF;
+            border: 1px solid #DDDADA;
+            padding: 70px;
+        }
+        
+        #login-icon {
+            float: right;
+            margin-top: 17px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        .forgot-password {
+/*             margin-left: 20px; */
+        }
+    </style>
+    
+    <script type="text/javascript">
+	
+		// Wait for Cordova to load
+		//
+		document.addEventListener("deviceready", onDeviceReady, false);
+
+		// Cordova is ready
+		//
+		function onDeviceReady() {
+		jQuery(window).ready(function(){
+			navigator.geolocation.getCurrentPosition(onSuccess, onError);
+			});
+		}
+
+		// onSuccess Geolocation
+		//
+		function onSuccess(position) {
+			var element = document.getElementById('geolocation');
+			element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+								'Longitude: '          + position.coords.longitude             + '<br />' +
+								'Altitude: '           + position.coords.altitude              + '<br />' +
+								'Accuracy: '           + position.coords.accuracy              + '<br />' +
+								'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+								'Heading: '            + position.coords.heading               + '<br />' +
+								'Speed: '              + position.coords.speed                 + '<br />' +
+								'Timestamp: '          +                                   position.timestamp          + '<br />';
+		}
+
+		// onError Callback receives a PositionError object
+		//
+		function onError(error) {
+			alert('code: '    + error.code    + '
+		' +
+					'message: ' + error.message + '
+		');
+		}	
+	
+        var GlobalVariables = {
+            'baseUrl': "http://rcapublicidade.com.br/clientes/clinicapp/",
+            'destUrl': "agendamento.html",
+            'AJAX_SUCCESS': 'SUCCESS',
+            'AJAX_FAILURE': 'FAILURE'
+        };
+        
+        
+        $(document).ready(function() {
+        	
+            /**
+             * Event: Login Button "Click"
+             * 
+             * Make an ajax call to the server and check whether the user's credentials are right. 
+             * If yes then redirect him to his desired page, otherwise display a message.
+             */
+            $('#login-form').submit(function(event) {
+                event.preventDefault(); 
+                
+                var postUrl = GlobalVariables.baseUrl + 'user/ajax_check_login';
+                var postData = {
+                    'username': $('#username').val(),
+                    'password': $('#password').val()
+                };
+                
+                $('.alert').addClass('hidden');
+        
+                $.post(postUrl, postData, function(response) {
+                    //////////////////////////////////////////////////
+                    console.log('Check Login Response: ', response);
+                    //////////////////////////////////////////////////
+                    
+                    if (!GeneralFunctions.handleAjaxExceptions(response)) return;
+                    
+                    if (response == GlobalVariables.AJAX_SUCCESS) {
+                        window.location.href = GlobalVariables.destUrl;
+                    } else {
+                        $('.alert').text(EALang['login_failed']);
+                        $('.alert').removeClass('hidden');
+                    }
+                }, 'json');
+            });
+        });
+    </script>
+</head>
+<body class="login">
+    <div id="main" class="fullwidth">
+        <div id="wrapper">
+			<div id="book-appointment-wizard" class="fullwidth" style="position: absolute; left: 0px; top: 0px;">
+				<div id="primary" class="pagemid">
+					<div class="inner">
+						<div class="content-area">
+							<!--<div class="logo">
+								<img src="assets/images/logo-splash.png" alt=""> 
+							</div>
+							 <p> </p>   -->
+							<!-- <hr> -->
+							<form id="login-form" class="form-vertical login-form">
+							
+								<br><br>
+								
+								<p id="geolocation">Buscando geolocalização...</p>
+							</form>
+						</div>
+					</div>
+					<div class="clearfix" ></div>
+					<br/><br/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script 
+        type="text/javascript" 
+        src="assets/js/general_functions.js"></script>
+</body>
+
+</html>
